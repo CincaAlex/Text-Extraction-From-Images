@@ -1,3 +1,4 @@
+
 # Text-Extraction-From-Images  
 📄 **Image Text Extractor with OCR**  
 
@@ -32,12 +33,19 @@ During my university exam session, I needed a reliable tool to extract text from
    ```
 
 5. Run the app:  
-   Navigate to the folder with the `main.py` file open and run:  
+   Navigate to the folder with the `app.py` file and run:  
    ```bash
-   python main.py
+   python app.py
    ```
 
+6. **Update the `script.js` file**  
+   Change the following line in `script.js`:  
+   ```javascript
+   const response = await fetch('http://127.0.0.1:5000/upload', 
+   ```  
+   Replace `'http://127.0.0.1:5000/upload'` with the correct HTTP address that appears in your console after running the app.
+
 ### 📸 Screenshots  
-Here’s a glimpse of the app:  
+Here’s a glimpse of the app in action:  
 ![Alt text](img/img.png)  
 ![Alt text](img/img1.png)  
