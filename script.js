@@ -23,7 +23,7 @@ document.getElementById('uploadForm').addEventListener('submit', async (event) =
     extractedTextContainer.innerHTML = '';
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/upload', {
+        const response = await fetch('http://127.0.0.1:5000/upload', {//copy the address from the command console
             method: 'POST',
             body: formData,
         });
