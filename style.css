@@ -1,0 +1,104 @@
+body {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 512px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  label {
+    font-size: 14px;
+    color: #4b5563;
+  }
+  input[type="file"] {
+    font-size: 14px;
+    color: #6b7280;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #e5e7eb;
+    cursor: pointer;
+  }
+  input[type="file"]:hover {
+    background-color: #f3f4f6;
+  }
+  button {
+    font-size: 16px;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button[type="submit"] {
+    background-color: #4f46e5;
+  }
+  button[type="submit"]:hover {
+    background-color: #4338ca;
+  }
+  button#downloadAllButton {
+    background-color: #10b981;
+    margin-top: 16px;
+    display: none;
+  }
+  button#downloadAllButton:hover {
+    background-color: #059669;
+  }
+  #result {
+    margin-top: 24px;
+    display: none;
+  }
+  #result h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #extractedText {
+    margin-top: 8px;
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 300px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  #loadingSpinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  #loadingSpinner div {
+    width: 32px;
+    height: 32px;
+    border: 4px solid #4f46e5;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
